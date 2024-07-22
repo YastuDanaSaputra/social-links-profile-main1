@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Inter", sans-serif;
+  color: hsl(0, 0%, 100%);
+  margin: 0;
+  padding: 20px; /* Menambahkan padding untuk jarak */
+}
+body .profile-container {
+  background-color: hsl(0, 0%, 12%);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%; /* Ubah lebar menjadi 100% agar sesuai dengan padding body */
+  max-width: 350px; /* Kurangi max-width jika perlu */
+}
+body .profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 15px;
+}
+body .profile-name {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+body .profile-location {
+  color: hsl(75, 94%, 57%);
+  font-size: 1em;
+  margin: 5px 0;
+}
+body .profile-description {
+  font-style: italic;
+  margin: 10px 0;
+  font-size: 14px; /* Body copy size */
+}
+body .profile-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+body .profile-links li {
+  margin: 10px 0;
+}
+body .profile-link {
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+}
+body .profile-link:hover {
+  background-color: hsl(0, 0%, 12%);
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Tambahkan margin bawah untuk jarak lebih */
+}
+@media (max-width: 600px) {
+  body .profile-container {
+    width: 95%; /* Sesuaikan lebar container untuk layar kecil */
+    max-width: none; /* Hapus batasan max-width */
+  }
+}/*# sourceMappingURL=styles-2.css.map */

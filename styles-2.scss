@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+$color-green: hsl(75, 94%, 57%);
+$color-white: hsl(0, 0%, 100%);
+$color-grey-700: hsl(0, 0%, 20%);
+$color-grey-800: hsl(0, 0%, 12%);
+$color-grey-900: hsl(0, 0%, 8%);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $color-grey-900;
+  font-family: "Inter", sans-serif;
+  color: $color-white;
+  margin: 0;
+  padding: 20px; /* Menambahkan padding untuk jarak */
+
+  .profile-container {
+    background-color: $color-grey-800;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%; /* Ubah lebar menjadi 100% agar sesuai dengan padding body */
+    max-width: 350px; /* Kurangi max-width jika perlu */
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  .profile-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+
+  .profile-location {
+    color: $color-green;
+    font-size: 1em;
+    margin: 5px 0;
+  }
+
+  .profile-description {
+    font-style: italic;
+    margin: 10px 0;
+    font-size: 14px; /* Body copy size */
+  }
+
+  .profile-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+
+    li {
+      margin: 10px 0;
+    }
+  }
+
+  .profile-link {
+    background-color: $color-grey-700;
+    color: $color-white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+
+    &:hover {
+      background-color: $color-grey-800;
+    }
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Tambahkan margin bawah untuk jarak lebih */
+  }
+
+  @media (max-width: 600px) {
+    .profile-container {
+      width: 95%; /* Sesuaikan lebar container untuk layar kecil */
+      max-width: none; /* Hapus batasan max-width */
+    }
+  }
+}
